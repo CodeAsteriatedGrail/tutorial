@@ -1,6 +1,6 @@
 .uva_con{
 	background-color:lightgreen ;
 	display:grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto auto auto;
 	justify-content: space-around;
 }

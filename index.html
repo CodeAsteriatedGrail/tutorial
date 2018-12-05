@@ -15,13 +15,51 @@
 		</div>
 	<script >
 	<!--JSON資料-->
-     var UVa ={"que":[{"name":"Vito's family",
-	 "ifsolve":"true",
-	 "number":"(CPE10406,?UVA10041)"},
-	{"name":"Hashmat the brave warrior",
-	 "ifsolve":"true",
-	 "number":"(CPE10407,?UVA10055)"}]};
-	 
+     <!-- var UVa ={"que":[{"name":"Vito's family", -->
+	 <!-- "ifsolve":"true", -->
+	 <!-- "number":"(CPE10406,?UVA10041)"}, -->
+	<!-- {"name":"Hashmat the brave warrior", -->
+	 <!-- "ifsolve":"true", -->
+	 <!-- "number":"(CPE10407,?UVA10055)"}]}; -->
+	 var UVa ={
+   "que":[
+      {
+         "name":"Vito's family",
+         "number":"(CPE10406,?UVA10041)",
+         "ifsolve":"True"
+      },
+      {
+         "name":"Hashmat the brave warrior",
+         "number":"(CPE10407,?UVA10055)",
+         "ifsolve":"True"
+      },
+      {
+         "name":"Primary Arithmetic",
+         "number":"(CPE10404,?UVA10035)",
+         "ifsolve":"False"
+      },
+      {
+         "name":"The 3n + 1 problem",
+         "number":"(CPE10400,?UVA100)",
+         "ifsolve":"False"
+      },
+      {
+         "name":"You can say 11",
+         "number":"(CPE10460,?UVA10929)",
+         "ifsolve":"False"
+      },
+      {
+         "name":"Bangla Numbers",
+         "number":"(CPE10414,?UVA10101)",
+         "ifsolve":"False"
+      },
+      {
+         "name":"List of Conquests",
+         "number":"(CPE21924,?UVA10420)",
+         "ifsolve":"True"
+      }
+   ]
+}
 	 <!--序列化-->
 	var jsonStr=JSON.stringify(UVa);
 	console.log(jsonStr.que);
@@ -33,7 +71,7 @@
 	<!-- 創立題目表格-->
 	var quearr="";
 	for(qui in UVa.que){
-		quearr +="<p>"+UVa.que[qui].name +"</p><p>"+UVa.que[qui].ifsolve+"</p>";
+		quearr +="<p>"+UVa.que[qui].name +"</p><p>"+UVa.que[qui].number +"</p><p>"+UVa.que[qui].ifsolve+"</p>";
 		};
 	document.getElementById("que").innerHTML = quearr;
     </script>
