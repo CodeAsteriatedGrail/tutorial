@@ -1,6 +1,19 @@
 .uva_con{
+	width:600px;
 	background-color:lightgreen ;
 	display:grid;
 	grid-template-columns: auto auto auto;
 	justify-content: space-around;
+	padding:2px;
+	font-size:20;
+}
+.uva_con>p:hover{
+	background-color:orange;
+}
+.uva_con >p:nth-child(-n+3){
+	background-color:lightblue;
+}
+#queview{
+	width:400px;
+	background-color:lightblue;
 }
