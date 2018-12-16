@@ -1,8 +1,12 @@
+body{
+	display:grid;
+	grid-template-columns: auto auto ;
+}
 .uva_con{
-	width:600px;
+	width:500px;
 	background-color:lightgreen ;
 	display:grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto ;
 	justify-content: space-around;
 	padding:2px;
 	font-size:20;
@@ -13,7 +17,14 @@
 .uva_con >p:nth-child(-n+3){
 	background-color:lightblue;
 }
+
 #queview{
 	width:400px;
 	background-color:lightblue;
+}
+#quest>iframe{
+	width:650px;
+	height:500px;
+	frameborder:5;
+	
 }
